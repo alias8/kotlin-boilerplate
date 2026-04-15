@@ -5,7 +5,7 @@ import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.stereotype.Service
 
 @Service
-class FeedFanoutConsumer(
+class KafkaConsumer(
 ) {
     @Transactional
     @KafkaListener(topics = ["post-created"], groupId = "feed-fanout-group")
